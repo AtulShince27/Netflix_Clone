@@ -1,0 +1,71 @@
+#heroDiv{
+    position: relative;
+}
+#heroImg{
+    z-index: -1;
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -weblit-mask-image: linear-gradient(to right, transparent, black 75%);
+}
+#heroCaption{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-left: 3rem;
+}
+#heroTitleImg{
+    width: 90%;
+    margin-bottom: 2.5rem;
+    max-width: 420px;
+}
+#heroCaption p{
+    font-size: 16px;
+    max-width: 700px;
+    margin-bottom: 1.25rem;;
+}
+.hero-buttons{
+    display: flex;
+    margin-bottom: 3rem;
+    gap: 1.5rem;
+}
+.hero-btn{
+    padding: 8px 16px;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    width: 10%;
+    border-radius: 6px;
+}
+.light-visible{
+    visibility: hidden;
+    position: absolute;
+}
+.hero-btn img{
+    width: 25px;
+}
+.dark{
+    background-color: #6d6d6eb3;
+    color: white;
+}
+.dark:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.playBtn:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.playBtn:hover .light-visible{
+    visibility: visible;
+}
+.playBtn:hover .dark-visible{
+    visibility: hidden;
+}

@@ -1,0 +1,22 @@
+.footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.footer-icons{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-bottom: 2rem;
+}
+.footer-icons img{
+    width: 50px;
+    align-self: center;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-bottom: 2rem;
+}
+.footer-content ul{
+    list-style: none;
+}

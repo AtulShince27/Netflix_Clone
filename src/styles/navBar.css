@@ -1,0 +1,40 @@
+.navBar{
+    display: grid;
+    grid-template-columns: 65% 15% 20%;
+    padding: 1rem 3rem;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.nav-col:first-child{
+    display: grid;
+    grid-template-columns: 14.28% 14% 14.28% 14.28% 14.28% 14.28% 14.56%;
+    place-items: center;
+}
+.nav-col:last-child{
+    display: grid;
+    grid-template-columns: 25% 25% 20% 30%;
+    place-items: center;
+}
+#netflixLogo{
+    width: 75%;
+}
+#profileCard{
+    display: flex;
+    gap: 8px;
+    right: 0px;
+}
+.visible{
+    visibility: hidden;
+}
+.logout{
+    position: absolute;
+    margin-top: 1.5rem;
+    width: 15%;
+    right: 3rem;
+
+}
+#profileCard:hover .visible{
+    visibility: visible;
+}
